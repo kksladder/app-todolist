@@ -1,11 +1,12 @@
 import React from 'react';
+import { format, formatDate } from 'date-fns';
 
-const page = () => {
+const TodoHd = () => {
     return (
         <div>
             <div>
                 <div>
-                    <strong>2024.11.21</strong>
+                    <h2>{format(new Date(2024, 11, 24), 'MM/dd/yyyy')}</h2>
                 </div>
                 <p>오늘의 할 일을 적어보세요.</p>
             </div>
@@ -13,4 +14,4 @@ const page = () => {
     );
 };
 
-export default page;
+export default TodoHd;
